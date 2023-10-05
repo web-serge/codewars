@@ -7,3 +7,8 @@ function reverseWords(str) {
 const binaryArrayToNumber = arr => {
   return parseInt(arr.join(""), 2)
 };
+
+// Descending Order
+function descendingOrder(n){
+  return Number(n.toString().split('').sort((a,b) => b - a).join(''))
+}
