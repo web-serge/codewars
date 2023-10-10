@@ -20,3 +20,9 @@ function isTriangle(a,b,c)
      return true
    } else {return false}
 }
+
+// Highest and Lowest
+function highAndLow(numbers){
+  let a = numbers.split(' ').sort( (a,b) => a - b)
+  return (a[a.length-1]+ ' ' +a[0])
+}
