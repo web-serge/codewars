@@ -35,3 +35,10 @@ function openOrSenior(data){
   })
   return arr
 }
+
+// Vowel Count
+function getCount(str) {
+    let count = 0
+    let arr = [...str].forEach(el => el == 'a' || el == 'e' || el == 'i' || el == 'o' || el == 'u' ? count++ : null)
+    return count
+}
