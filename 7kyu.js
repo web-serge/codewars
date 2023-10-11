@@ -26,3 +26,12 @@ function highAndLow(numbers){
   let a = numbers.split(' ').sort( (a,b) => a - b)
   return (a[a.length-1]+ ' ' +a[0])
 }
+
+// Categorize New Member
+function openOrSenior(data){
+  const arr = []
+  data.forEach(el => {
+    el[0] >= 55 && el[1] > 7 ? arr.push('Senior') : arr.push('Open')
+  })
+  return arr
+}
