@@ -27,9 +27,11 @@ function highAndLow(numbers){
   return (a[a.length-1]+ ' ' +a[0])
 }
 
-// Vowel Count
-function getCount(str) {
-    let count = 0
-    let arr = [...str].forEach(el => el == 'a' || el == 'e' || el == 'i' || el == 'o' || el == 'u'? count++ : null)
-    return count
+// Categorize New Member
+function openOrSenior(data){
+  const arr = []
+  data.forEach(el => {
+    el[0] >= 55 && el[1] > 7 ? arr.push('Senior') : arr.push('Open')
+  })
+  return arr
 }
