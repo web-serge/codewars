@@ -23,3 +23,8 @@ const quarterOf = (month) => {
     case month <=12: return 4
   }
 }
+
+// Switch it Up!
+function switchItUp(number){
+  return ["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine"][number]
+}
