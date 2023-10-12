@@ -42,3 +42,10 @@ function getCount(str) {
     let arr = [...str].forEach(el => el == 'a' || el == 'e' || el == 'i' || el == 'o' || el == 'u' ? count++ : null)
     return count
 }
+
+// Odd or Even?
+function oddOrEven(array) {
+    let count = 0
+    array.forEach(i => { return count += i })
+    return count % 2 === 0 ? 'even' : 'odd'
+}
