@@ -57,3 +57,10 @@ function oddOrEven(array) {
 let number = function (array) {
     return array.map((el, index) => `${index + 1}: ${el}`)
 }
+// The highest profit wins!
+function minMax(arr){
+  let result = []
+  let min = Math.min.apply(null, arr)
+  let max = Math.max.apply(null, arr)
+  return result = [min, max]
+}
