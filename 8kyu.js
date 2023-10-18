@@ -49,3 +49,7 @@ String.prototype.toAlternatingCase = function () {
   }
   return result
 }
+// Is it even?
+function testEven(n) {
+    return Number.isInteger(n) && n % 2 === 0 ? true : false 
+}
