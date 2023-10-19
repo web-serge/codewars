@@ -64,3 +64,7 @@ function minMax(arr){
   let max = Math.max.apply(null, arr)
   return result = [min, max]
 }
+// Friend or Foe?
+function friend(friends){
+  return friends.filter(f => f.length === 4)
+}
