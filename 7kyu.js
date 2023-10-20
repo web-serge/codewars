@@ -68,3 +68,8 @@ function minMax(arr){
 function friend(friends){
   return friends.filter(f => f.length === 4)
 }
+// Shortest Word
+function findShort(s){
+  let length = s.split(' ').map(word => word.length).sort((a, b) => a - b)
+  return length[0]
+}
