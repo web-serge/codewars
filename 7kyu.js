@@ -73,3 +73,19 @@ function findShort(s){
   let length = s.split(' ').map(word => word.length).sort((a, b) => a - b)
   return length[0]
 }
+// Spin Around, Touch the Ground
+function spinAround(turns) {
+  if (turns.length === 0) {
+    return 0
+  } else {
+    const arr = []
+    turns.map(el => {
+    if (el === 'right') {
+      arr.push(el = 90)
+    } else if (el === 'left') {
+      arr.push(el = -90)
+    }
+  })
+    return Math.floor(Math.floor(Math.abs(arr.reduce((prev, item) => prev + item) / 360)))
+  }
+}
