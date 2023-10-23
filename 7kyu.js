@@ -89,3 +89,10 @@ function spinAround(turns) {
     return Math.floor(Math.floor(Math.abs(arr.reduce((prev, item) => prev + item) / 360)))
   }
 }
+// Anagram Detection
+var isAnagram = function(test, original) {
+  console.log(test.toLowerCase().split('').sort().join(''))
+  let a = test.toLowerCase().split('').sort().join('')
+  let b = original.toLowerCase().split('').sort().join('')
+  return a === b
+};
