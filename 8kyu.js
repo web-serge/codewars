@@ -53,3 +53,7 @@ String.prototype.toAlternatingCase = function () {
 function testEven(n) {
     return Number.isInteger(n) && n % 2 === 0 ? true : false 
 }
+// Expressions Matter
+function expressionMatter(a, b, c) {
+ return Math.max( a * (b + c), a * b * c, a + b * c, (a + b) * c, a + b + c )
+}
