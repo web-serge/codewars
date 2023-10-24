@@ -37,23 +37,42 @@ function switchItUp(number) {
 function removeEveryOther(arr) {
     return arr.filter((item, index) => index % 2 === 0)
 }
+
 // altERnaTIng cAsE <=> ALTerNAtiNG CaSe
 String.prototype.toAlternatingCase = function () {
-  let result = ''
-  for (let i = 0; i < this.length; i++) {
-    if (this[i] === this[i].toUpperCase()){
-      result += this[i].toLowerCase()
-    } else {
-      result += this[i].toUpperCase()
+    let result = ''
+    for (let i = 0; i < this.length; i++) {
+        if (this[i] === this[i].toUpperCase()) {
+            result += this[i].toLowerCase()
+        } else {
+            result += this[i].toUpperCase()
+        }
     }
-  }
-  return result
+    return result
 }
+
 // Is it even?
 function testEven(n) {
-    return Number.isInteger(n) && n % 2 === 0 ? true : false 
+    return Number.isInteger(n) && n % 2 === 0 ? true : false
 }
+
 // Expressions Matter
 function expressionMatter(a, b, c) {
- return Math.max( a * (b + c), a * b * c, a + b * c, (a + b) * c, a + b + c )
+    return Math.max(a * (b + c), a * b * c, a + b * c, (a + b) * c, a + b + c)
+}
+
+// Total amount of points
+function points(games) {
+    let result = 0
+    games.map(el => {
+        if (el[0] > el[2]) {
+            result += 3
+        } else if (el[0] < el[2]) {
+            result += 0
+        } else if (
+            el[0] === el[2]) {
+            result += 1
+        }
+    })
+    return result
 }
