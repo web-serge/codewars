@@ -96,3 +96,15 @@ var isAnagram = function(test, original) {
   let b = original.toLowerCase().split('').sort().join('')
   return a === b
 };
+//  Remove anchor from URL
+function removeUrlAnchor(url){
+    let index = 0
+    for (let i = 0; i < url.length; i++) {
+        if (url[i] === '#') index = i
+    }
+    if (index === 0) {
+        return url
+    } else {
+        return url.split('').splice(0, index).join('')
+    }
+}
