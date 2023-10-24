@@ -108,3 +108,12 @@ function removeUrlAnchor(url){
         return url.split('').splice(0, index).join('')
     }
 }
+// Disemvowel Trolls
+function disemvowel(str) {
+  let newStr = ''
+  for (let i = 0; i < str.length; i++) {
+   let a = str.toLowerCase()
+    if (a[i] !== 'a' && a[i] !== 'e' && a[i] !== 'i' && a[i] !== 'o' && a[i] !== 'u') newStr += str[i]
+  }
+  return newStr
+}
