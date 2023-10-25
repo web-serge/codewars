@@ -117,3 +117,13 @@ function disemvowel(str) {
   }
   return newStr
 }
+// Find the capitals
+var capitals = function (word) {
+  const result = []
+  word.split('').forEach((el, index) => {
+    if (el === el.toUpperCase()) {
+      result.push(index)
+    }
+  })
+  return result
+};
