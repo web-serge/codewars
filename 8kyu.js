@@ -76,3 +76,16 @@ function points(games) {
     })
     return result
 }
+// What is between?
+function between(a, b, result) {
+  result = []
+  for (let i = a; i <= b; i++){
+    result.push(a++)
+  }
+  return result
+}
+// 5 without numbers !!
+function unusualFive() {
+  const name = 'Serge'
+  return name.length;
+}
