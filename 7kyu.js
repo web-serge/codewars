@@ -127,3 +127,10 @@ var capitals = function (word) {
   })
   return result
 };
+// Get the Middle Character
+function getMiddle(s) { 
+  const int = Math.floor(s.length/2)
+  if (s.length % 2 === 0) {
+    return s[int - 1]+s[int]
+  } else return s[int]
+}
