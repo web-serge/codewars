@@ -134,3 +134,9 @@ function getMiddle(s) {
     return s[int - 1]+s[int]
   } else return s[int]
 }
+// Sort Numbers
+function solution(nums){
+  if (nums) {
+   return nums.sort((a, b) => a - b)
+  } else return []
+}
