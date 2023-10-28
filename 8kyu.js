@@ -89,3 +89,7 @@ function unusualFive() {
   const name = 'Serge'
   return name.length;
 }
+// Sort and Star
+function twoSort(s) {
+  return s.sort()[0].split('').join('***')
+}
