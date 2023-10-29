@@ -140,3 +140,11 @@ function solution(nums){
    return nums.sort((a, b) => a - b)
   } else return []
 }
+// Jaden Casing Strings
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map(el => el[0].toUpperCase() + el.slice(1)).join(' ')
+};
+// String ends with?
+function solution(str, ending){
+  return str.endsWith(ending)
+}
