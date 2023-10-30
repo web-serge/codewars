@@ -93,3 +93,7 @@ function unusualFive() {
 function twoSort(s) {
   return s.sort()[0].split('').join('***')
 }
+// Abbreviate a Two Word Name
+function abbrevName(name){
+     return name.split(' ').map(el => el.slice(0,1).toUpperCase()).join('.')
+}
