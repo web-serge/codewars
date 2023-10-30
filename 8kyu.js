@@ -97,3 +97,7 @@ function twoSort(s) {
 function abbrevName(name){
      return name.split(' ').map(el => el.slice(0,1).toUpperCase()).join('.')
 }
+// Remove String Spaces
+function noSpace(x){
+  return x.split('').filter(el => el !== ' ').join('')
+}
