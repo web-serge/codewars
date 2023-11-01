@@ -19,3 +19,9 @@ function countSmileys(arr) {
   })
   return result.length
 }
+// Detect Pangram
+function isPangram(string){
+  let result = string.replace(/[^a-z]/gi, '').split('')
+  result = new Set(result).size
+  return result === 26 || result === 27
+}
