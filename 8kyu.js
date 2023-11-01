@@ -101,3 +101,7 @@ function abbrevName(name){
 function noSpace(x){
   return x.split('').filter(el => el !== ' ').join('')
 }
+// Super Duper Easy
+function problem(x){
+  return typeof x === 'number' ? x * 50 + 6 : 'Error'
+}
