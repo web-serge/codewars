@@ -25,3 +25,19 @@ function isPangram(string){
   result = new Set(result).size
   return result === 26 || result === 27
 }
+// Mexican Wave
+function wave(str){
+  const array = [...str]
+  let count = 0
+  const result = []
+  array.forEach((el, idx, array) => {
+      let copy = [...array]
+      if (array[count] !== ' ') { 
+        copy[count] = array[count].toUpperCase()
+        result.push(copy.join(''))
+        count++ } else {
+        count++
+      }})
+  console.log(result)
+  return result
+}
