@@ -105,3 +105,11 @@ function noSpace(x){
 function problem(x){
   return typeof x === 'number' ? x * 50 + 6 : 'Error'
 }
+// Exclamation marks series #1: Remove an exclamation mark from the end of string
+function remove (string) {
+  let arr = [...string]
+  if (arr[arr.length - 1] === '!') {
+    arr.pop(arr[arr.length - 1])
+  }
+   return arr.join('')
+}
