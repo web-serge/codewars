@@ -148,3 +148,18 @@ String.prototype.toJadenCase = function () {
 function solution(str, ending){
   return str.endsWith(ending)
 }
+// Check the exam
+function checkExam(array1, array2) {
+  let result = 0
+  array1.forEach((el, idx) => {
+    console.log(el, idx)
+    if (el === array2[idx]) {
+      result += 4
+    } else if (el !== array2[idx] && array2[idx] !== '') {
+      result -= 1
+    } else if (el !== array2[idx] && array2[idx] === '')
+      result = result    
+  })
+  console.log(result)
+  return result >= 0 ? result : 0
+}
