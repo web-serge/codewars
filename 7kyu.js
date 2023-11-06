@@ -163,3 +163,7 @@ function checkExam(array1, array2) {
   console.log(result)
   return result >= 0 ? result : 0
 }
+// Sort array by string length
+function sortByLength (array) {
+    return array.sort((a, b) => a.length-b.length)
+}
