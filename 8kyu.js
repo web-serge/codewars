@@ -113,3 +113,19 @@ function remove (string) {
   }
    return arr.join('')
 }
+// Find the smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min.apply(null,args)
+  }
+}
+// No zeros for heros
+function noBoringZeros(n) {
+  let array = n.toString().split('')
+  for (let i = array.length; i > 0; i--) {
+    if (array[array.length - 1] === '0') {
+      array.pop(array[array.length - 1])
+    } else break
+  }
+  return Number(array.join(''))
+}
