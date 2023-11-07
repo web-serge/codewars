@@ -167,3 +167,19 @@ function checkExam(array1, array2) {
 function sortByLength (array) {
     return array.sort((a, b) => a.length-b.length)
 }
+// Two to One
+function longest(s1, s2) {
+  return [...new Set(s1 + s2)].sort().join('')
+}
+// You're a square!
+var isSquare = function(n){
+  if (n < 0) return false
+  
+  let i = Math.ceil(Math.sqrt(n))
+  console.log(i,n)
+  return i * i === n ? true : false
+}
+// Find the middle element
+function gimme (triplet) {
+  return triplet.indexOf([...triplet].sort((a,b) => a-b)[1], 0)
+}
