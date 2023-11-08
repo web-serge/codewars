@@ -41,3 +41,18 @@ function wave(str){
   console.log(result)
   return result
 }
+// Find the unique number
+function findUniq(arr) {
+  const a = arr.reduce((acc, i) => {
+    if (!!acc[i]) {
+      acc[i].push(i)
+    } else {
+      acc[i] = [i]
+    }
+    return acc
+  }, {})
+  let result = Object.values(a)
+  if (result[0].length < result[1].length) {
+    return result[0][0]
+  } else return result[1][0]
+}
