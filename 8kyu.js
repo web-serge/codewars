@@ -147,3 +147,12 @@ function countPositivesSumNegatives(input) {
 function replace(s){
   return s.replace(/[aeiou]/gi, '!')
 }
+// Is the string uppercase?
+String.prototype.isUpperCase = function() {
+  for (let i = 0; i < this.length; i++){
+    if (this[i] !== this[i].toUpperCase()) {
+      return false
+    }
+  }
+  return true
+}
