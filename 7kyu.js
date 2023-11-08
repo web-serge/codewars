@@ -183,3 +183,10 @@ var isSquare = function(n){
 function gimme (triplet) {
   return triplet.indexOf([...triplet].sort((a,b) => a-b)[1], 0)
 }
+// Remove the minimum
+function removeSmallest(numbers) {
+  let arr = [...numbers]
+  let index = arr.indexOf(Math.min.apply(null, arr))
+  arr.splice(index, 1)
+  return arr
+}
