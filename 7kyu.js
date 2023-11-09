@@ -194,3 +194,15 @@ function removeSmallest(numbers) {
 function smallEnough(a, limit){
   return a.every(el => el <= limit)
 }
+// Find the stray number
+function stray(numbers) {
+  let obj = numbers.reduce((acc, i) => {
+    if (!!acc[i]) {
+      acc[i].push(i)
+    } else {
+      acc[i] = [i]
+    }
+    return acc
+  }, {})
+  return Object.values(obj).filter(el => el.length === 1)[0][0]
+}
