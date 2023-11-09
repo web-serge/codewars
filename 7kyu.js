@@ -190,3 +190,7 @@ function removeSmallest(numbers) {
   arr.splice(index, 1)
   return arr
 }
+// Small enough? - Beginner
+function smallEnough(a, limit){
+  return a.every(el => el <= limit)
+}
