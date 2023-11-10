@@ -206,3 +206,19 @@ function stray(numbers) {
   }, {})
   return Object.values(obj).filter(el => el.length === 1)[0][0]
 }
+// Alternate capitalization
+function capitalize(s){
+  const arrEven = []
+  const arrOdd = []
+  s.split('').forEach((el, idx) => {
+    if (idx % 2 === 0) {
+      arrEven.push(el.toUpperCase())
+      arrOdd.push(el)
+    } else {
+      arrEven.push(el)
+       arrOdd.push(el.toUpperCase())
+    }
+  })
+  let result = [arrEven.join(''), arrOdd.join('')]
+  return result
+};
