@@ -56,3 +56,17 @@ function findUniq(arr) {
     return result[0][0]
   } else return result[1][0]
 }
+// 
+function twoSum(numbers, target) {
+    const result = []
+    for (let i = 0; i < numbers.length; i++) {
+      for (let j = 0; j < numbers.length; j++) {
+        if (numbers[i] + numbers[j] === target && i !== j) {
+          result.push(i)
+          result.push(j)
+          console.log(result)
+          return result
+        }
+      }
+    }
+}
