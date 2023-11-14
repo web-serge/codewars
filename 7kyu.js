@@ -222,3 +222,12 @@ function capitalize(s){
   let result = [arrEven.join(''), arrOdd.join('')]
   return result
 };
+// Number of People in the Bus
+var number = function(arr){
+  return arr.flat().reduce((acc, el, idx) => {
+      if (idx % 2 === 0) {
+        acc += el
+      } else acc -= el
+      return acc
+    },0)  
+}
