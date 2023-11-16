@@ -84,3 +84,16 @@ function alphabetPosition(text) {
   console.log(result.join(' '))
   return result.join(' ')
 }
+// Array.diff
+function arrayDiff(a, b) {
+  const result = []
+  if (a.length === 0) return []
+  if (b.length === 0) return a
+  for (let i = 0; i < a.length; i++) {
+    console.log(a[i])
+    if (b.indexOf(a[i]) === -1){
+      result.push(a[i])
+    } 
+  }
+  return result
+}
