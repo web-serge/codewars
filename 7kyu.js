@@ -231,3 +231,8 @@ var number = function(arr){
       return acc
     },0)  
 }
+// Form The Minimum
+function minValue(values){
+  let arr = [...new Set(values)].sort().join('')
+  return +arr
+}
