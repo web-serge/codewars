@@ -236,3 +236,7 @@ function minValue(values){
   let arr = [...new Set(values)].sort().join('')
   return +arr
 }
+// Sum of Minimums!
+function sumOfMinimums(arr) {
+  return arr.map(el => el.sort((a, b) => a - b).splice(0, 1)).flat().reduce((acc, i) => acc + i)
+}
