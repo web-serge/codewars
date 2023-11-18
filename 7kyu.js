@@ -240,3 +240,7 @@ function minValue(values){
 function sumOfMinimums(arr) {
   return arr.map(el => el.sort((a, b) => a - b).splice(0, 1)).flat().reduce((acc, i) => acc + i)
 }
+// Sum of Minimums!
+function sumOfMinimums(arr) {
+  return arr.map(el => el.sort((a, b) => a - b).splice(0, 1)).flat().reduce((acc, i) => acc + i)
+}
