@@ -107,3 +107,11 @@ function likes(names) {
       default: return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
   }
 }
+// Count characters in your string
+function count(string) {
+ let obj = string.split('').reduce((acc, i) => {
+    !!acc[i] ? acc[i] +=1 : acc[i] = 1
+    return acc
+  }, {})
+ return obj
+}
