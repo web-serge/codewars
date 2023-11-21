@@ -156,3 +156,8 @@ String.prototype.isUpperCase = function() {
   }
   return true
 }
+// A wolf in sheep's clothing
+function warnTheSheep(arr) {
+  const idx = arr.reverse().indexOf('wolf')
+  return  idx > 0 ? `Oi! Sheep number ${idx}! You are about to be eaten by a wolf!` : "Pls go away and stop eating my sheep"
+}
