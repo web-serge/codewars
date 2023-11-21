@@ -244,3 +244,23 @@ function sumOfMinimums(arr) {
 function sumOfMinimums(arr) {
   return arr.map(el => el.sort((a, b) => a - b).splice(0, 1)).flat().reduce((acc, i) => acc + i)
 }
+// Row Weights
+function rowWeights(array){
+  let arr = [0,0]
+  array.forEach((i, idx) => {
+    if (idx % 2 !== 0) {
+      arr[1] += i
+    } else {
+      arr[0] += i
+    }
+  })
+  return arr
+}
+// Make a function that does arithmetic!
+function arithmetic(a, b, operator){
+  switch (operator) {
+      case 'add': return a + b;
+      case 'subtract': return a - b;
+      case 'multiply': return a * b;
+      case 'divide': return a / b;
+  }}
