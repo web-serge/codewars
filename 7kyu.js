@@ -264,3 +264,14 @@ function arithmetic(a, b, operator){
       case 'multiply': return a * b;
       case 'divide': return a / b;
   }}
+// Round up to the next multiple of 5
+function roundToNext5(n){
+  if (n % 5 === 0) {
+      return n
+  } else {
+    for (let i = 0; i < 5; i++) {
+      n++
+      if (n % 5 === 0) return n
+    }
+  }
+}
