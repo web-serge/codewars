@@ -161,3 +161,13 @@ function warnTheSheep(arr) {
   const idx = arr.reverse().indexOf('wolf')
   return  idx > 0 ? `Oi! Sheep number ${idx}! You are about to be eaten by a wolf!` : "Pls go away and stop eating my sheep"
 }
+// How old will I be in 2099?
+function  calculateAge(a, b) {
+  if (a === b) return 'You were born this very year!'
+  
+  const result = Math.abs(a - b)
+  const word = result === 1 ? 'year' : 'years'
+  
+  if (a < b) return `You are ${result} ${word} old.`
+  if (a > b) return `You will be born in ${result} ${word}.`
+}
