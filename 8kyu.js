@@ -171,3 +171,8 @@ function  calculateAge(a, b) {
   if (a < b) return `You are ${result} ${word} old.`
   if (a > b) return `You will be born in ${result} ${word}.`
 }
+// Name Shuffler
+function nameShuffler(str){
+  const result = str.split(' ').reverse().join(' ')
+  return result
+}
