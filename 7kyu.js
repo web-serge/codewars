@@ -275,3 +275,15 @@ function roundToNext5(n){
     }
   }
 }
+//
+function accum(s) {
+  let count = 0
+  let arr = s.split('').map(el => {
+    count++
+    let word = el.repeat(count).toLowerCase()
+    word = word[0].toUpperCase() + word.slice(1)
+    console.log(word)
+    return word
+  })
+  return arr.join('-')
+}
