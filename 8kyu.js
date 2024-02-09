@@ -176,3 +176,7 @@ function nameShuffler(str){
   const result = str.split(' ').reverse().join(' ')
   return result
 }
+// How many stairs will Suzuki climb in 20 years?
+function stairsIn20(s) {
+    return s.flat().reduce((acc, el) => acc += el) * 20
+}
