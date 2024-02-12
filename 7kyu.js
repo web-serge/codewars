@@ -287,3 +287,15 @@ function accum(s) {
   })
   return arr.join('-')
 }
+// Fix string case
+function solve(s){
+    let lower = 0;
+    let upper = 0;
+    s.split('').forEach(el => {
+        if (el === el.toUpperCase()) {
+            upper++
+        } else lower++
+    })
+                        
+    return lower >= upper ? s.toLowerCase() : s.toUpperCase()
+}
