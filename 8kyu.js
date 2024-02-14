@@ -180,3 +180,13 @@ function nameShuffler(str){
 function stairsIn20(s) {
     return s.flat().reduce((acc, el) => acc += el) * 20
 }
+// Exclamation marks series #2: Remove all exclamation marks from the end of sentence
+function remove (string) { 
+  let result = string;
+  for (let i = string.length - 1; i >= 0; i--) {
+    if (result.endsWith('!')) {
+      result = result.split('').slice(0, -1).join('')
+    } 
+  }
+  return result
+}
