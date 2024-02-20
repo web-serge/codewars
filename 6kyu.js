@@ -115,3 +115,12 @@ function count(string) {
   }, {})
  return obj
 }
+// Meeting
+function meeting(s) {
+    const res = s.toUpperCase().split(';')
+        .map(el => el.split(':').reverse().join(', '))
+        .sort().join(')(')
+
+    console.log(res)
+    return `(${res})`
+}
