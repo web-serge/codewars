@@ -340,3 +340,11 @@ function factorial(n){
   if (n === 0 || n === 1) return 1
   return n * factorial(n - 1)
 }
+// Maximum Product
+function adjacentElementsProduct(array) {
+  const res = []
+  array.forEach((el, idx) => {
+    res.push(el * array[idx + 1])
+  })
+  return res.sort((a,b)=>b-a)[0]
+}
