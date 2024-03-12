@@ -124,3 +124,12 @@ function meeting(s) {
     console.log(res)
     return `(${res})`
 }
+// Take a Ten Minutes Walk
+function isValidWalk(walk) {
+  const counter = walk.reduce((acc, el) => {
+    acc[el] = (acc[el] || 0) + 1
+    return acc
+  }, {})
+  
+  return walk.length === 10 ? counter.w === counter.e && counter.n === counter.s : false
+}
