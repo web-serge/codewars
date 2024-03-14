@@ -348,3 +348,8 @@ function adjacentElementsProduct(array) {
   })
   return res.sort((a,b)=>b-a)[0]
 }
+// Greet Me
+var greet = function(name) {
+  const editedName = name[0].toUpperCase() + name.slice(1)
+  return (`Hello ${editedName}!`)
+};
