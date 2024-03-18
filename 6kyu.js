@@ -133,3 +133,17 @@ function isValidWalk(walk) {
   
   return walk.length === 10 ? counter.w === counter.e && counter.n === counter.s : false
 }
+// Duplicate Encoder
+function duplicateEncode(w){
+  const array = w.toLowerCase().split('')
+  
+  const obj = array.reduce((acc, el) => {
+    acc[el] = (acc[el] || 0) + 1
+    return acc
+  }, {})
+  
+  const result = array.map(el => obj[el] > 1 ? ')' : '(' ).join('')
+  
+  //console.log(array, obj, result)
+  return result
+}
