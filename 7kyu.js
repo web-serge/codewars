@@ -353,3 +353,12 @@ var greet = function(name) {
   const editedName = name[0].toUpperCase() + name.slice(1)
   return (`Hello ${editedName}!`)
 };
+// Predict your age!
+function predictAge(...age){
+  const result = age.reduce((acc,el) => {
+    acc += el**2
+    return acc
+  },0)
+  
+  return Math.floor(Math.sqrt(result)/2)
+}
