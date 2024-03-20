@@ -147,3 +147,8 @@ function duplicateEncode(w){
   //console.log(array, obj, result)
   return result
 }
+// Highest Scoring Word
+function high(x){
+  const arr = x.split(' ').map(el => el.split('').reduce((acc,el) => acc += el.charCodeAt()-96, 0))
+  return x.split(' ')[arr.indexOf(Math.max(...arr))] 
+}
